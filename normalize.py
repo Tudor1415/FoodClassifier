@@ -7,7 +7,8 @@ import matplotlib.pyplot as plt
 # Resizing the images in all the folders of all the directories
 sizes = []
 for dir in os.listdir("Dataset/images/"):
-    os.mkdir(f"Preprocessed/images/{dir}")
+    if dir not in os.listdir('Preprocessed/images/'):
+        os.mkdir(f"Preprocessed/images/{dir}")
     for imagePath in os.listdir("Dataset/images/"+dir):
         img = Image.open(f"Dataset/images/{dir}/{imagePath}")
         print(img.size)

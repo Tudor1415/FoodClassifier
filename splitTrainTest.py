@@ -17,5 +17,3 @@ for dir in os.listdir("Preprocessed/images/"):
             os.rename(f"Preprocessed/images/{dir}/{imagePath}", f"Preprocessed/test/{dir}/{imagePath}")
         else:
             os.rename(f"Preprocessed/images/{dir}/{imagePath}", f"Preprocessed/train/{dir}/{imagePath}")
-
-os.remove("Preprocessed/images")

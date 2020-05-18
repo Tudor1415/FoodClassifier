@@ -7,3 +7,5 @@ Each script has its own output:
 You need to merge the preprocessed and augmented data before trainging.
 
 The training set has 80% of the total images and the testing set has 20%.
+
+To activate the virtual env use the folllowing command: source venv/bin/activate
